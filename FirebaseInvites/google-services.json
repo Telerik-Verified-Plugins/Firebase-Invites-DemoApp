@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "115832119218",
+    "firebase_url": "https://cordova-firebase-invites.firebaseio.com",
+    "project_id": "cordova-firebase-invites",
+    "storage_bucket": "cordova-firebase-invites.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115832119218:android:019f8e4ded456172",
+        "android_client_info": {
+          "package_name": "com.telerik.plugindemo.firebaseinvites"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115832119218-t4u8i172lk1dp3akn93jmj20nnctkj76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg1EQZxVv82rQtLRNz_wepFnTWnH_foAg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

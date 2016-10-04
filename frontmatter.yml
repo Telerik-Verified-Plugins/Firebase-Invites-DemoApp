@@ -1,0 +1,10 @@
+title: Firebase Invites
+slug: tvpm-firebase-invites
+page_title: Firebase Invites | Telerik Verified Plugin Sample | Telerik Platform
+description: This sample app shows you how to add Firebase Invites capabilities to your app using the Firebase Invites plugin from the Telerik Verified Plugins Marketplace.
+publish: true
+content_filter: true
+tags: verified plugin
+apis: appbuilder.simulator cordova.splashscreen cordova.events cordova.dialogs cordova.localStorage kendo.application kendo.application.skin kendo.observableObject kendo.view kendo.button kendo.navBar kendo.layout kendo.tabStrip verified.firebase-invites firebase-invites.sendInvitation firebase-invites.getInvitation
+related_resources:
+- "[The Firebase Invites Plugin](http://plugins.telerik.com/cordova/plugin/firebase-invites)"

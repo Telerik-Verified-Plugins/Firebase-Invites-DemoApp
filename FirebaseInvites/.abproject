@@ -29,7 +29,7 @@
     "cordova-plugin-console",
     "cordova-plugin-device",
     "cordova-plugin-dialogs",
-    "cordova-plugin-firebase-invites@0.9.4",
+    "cordova-plugin-firebase-invites@1.0.1",
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
     "cordova-plugin-whitelist"
@@ -41,7 +41,9 @@
   "iOSDeploymentTarget": "7.0",
   "CordovaPluginVariables": {
     "cordova-plugin-firebase-invites": {
-      "REVERSED_CLIENT_ID": "com.googleusercontent.apps.6535513912-uvpf249ak7avodois85tkjmh2lc2j952"
+      "REVERSED_CLIENT_ID": "com.googleusercontent.apps.6535513912-uvpf249ak7avodois85tkjmh2lc2j952",
+      "ASSOCIATED_DOMAINS": "goo.gl.bla",
+      "NSContactsUsageDescription": "We want to access your contacts so we can invite them to use this app."
     }
   }
 }

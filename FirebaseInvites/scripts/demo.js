@@ -5,6 +5,45 @@
   
   DemoViewModel = kendo.data.ObservableObject.extend({
     
+    sendInvitations: function () {
+      if (!this.checkSimulator()) {
+        FirebaseInvites.sendInvitation(
+          {
+              title: "The title",
+              message: "The message",
+              deepLink: "myapp://deeplink",
+              callToActionText: "Install please!",
+              description: "My description",
+              customImage: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+              //emailSubject: "My Email subject",
+              //emailHtmlContent: "Some <strong>HTML</strong> content",
+              androidClientID: "123abc",
+              // You can find your iOS app's client ID in the GoogleService-Info.plist file you downloaded from the Firebase console
+              iosClientID: "abc123"
+          },
+          function (msg) {
+            alert(JSON.stringify(msg));
+          },
+          function (msg) {
+            alert(JSON.stringify(msg));
+          }
+        );
+      }
+    },
+
+    getInvitation: function () {
+      if (!this.checkSimulator()) {
+        FirebaseInvites.getInvitation(
+          function (msg) {
+            alert(JSON.stringify(msg));
+          },
+          function (msg) {
+            alert(JSON.stringify(msg));
+          }
+        );
+      }
+    },
+
     login: function () {
       if (!this.checkSimulator()) {
         var feedback = document.querySelector("#feedback");
@@ -77,7 +116,7 @@
       if (window.navigator.simulator === true) {
         alert('This plugin is not available in the simulator.');
         return true;
-      } else if (window.plugins === undefined || window.plugins.googleplus === undefined) {
+      } else if (window.FirebaseInvites === undefined) {
         alert('Plugin not found. Maybe you are running in AppBuilder Companion app which currently does not support this plugin.');
         return true;
       } else {
